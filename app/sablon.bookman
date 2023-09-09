@@ -1,0 +1,106 @@
+[
+    {
+        "kodlar": {
+            "": {
+                "": {
+                    "isim": ".",
+                    "id": "yAjS35Sc3j",
+                    "desc": ".",
+                    "modules": [
+                        "."
+                    ],
+                    "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                    "main_code": ".",
+                    "komutlar_code": ".",
+                    "kod_rank": "sablon",
+                    "k_adi": "NafiBey",
+                    "date": "11/19/2021"
+                }
+            },
+            "Şablon 1 - Basit Sunucu Şablonu": {
+                "isim": "Şablon 1 - Basit Sunucu Şablonu",
+                "id": "DakeYptO7g",
+                "desc": "Bu şablon RoboTMotion Development tarafından yapılmıştır.",
+                "modules": [
+                    "."
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                "main_code": "NB's Community By RoboTMotion.",
+                "komutlar_code": "https://discord.new/gFHfX38CZk8A",
+                "kod_rank": "sablon",
+                "k_adi": "NafiBey",
+                "date": "11/30/2021"
+            },
+            "Şablon 2 - Giveaway Sunucu Şablonu": {
+                "isim": "Şablon 2 - Giveaway Sunucu Şablonu",
+                "id": "DhU8EPTIju",
+                "desc": "Bu şablon RoboTMotion Development tarafından yapılmıştır.",
+                "modules": [
+                    "."
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                "main_code": "NB's Community By RoboTMotion.\r\n",
+                "komutlar_code": "https://discord.new/2zFRCSyjvqwJ",
+                "kod_rank": "sablon",
+                "k_adi": "NafiBey",
+                "date": "11/30/2021"
+            },
+            "Şablon 3 - Basit Eğlence Sunucusu Şablonu": {
+                "isim": "Şablon 3 - Basit Eğlence Sunucusu Şablonu",
+                "id": "KXjVlVecS9",
+                "desc": "Bu şablon RoboTMotion Development tarafından yapılmıştır.",
+                "modules": [
+                    "."
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                "main_code": "NB's Community By RoboTMotion.\r\n",
+                "komutlar_code": "https://discord.new/BBN6yqtukwct",
+                "kod_rank": "sablon",
+                "k_adi": "NafiBey",
+                "date": "11/30/2021"
+            },
+            "Şablon 4 - Gelişmiş Public Sunucu Şablonu": {
+                "isim": "Şablon 4 - Gelişmiş Public Sunucu Şablonu",
+                "id": "jOi5D1g4n0",
+                "desc": "Bu şablon RoboTMotion Development tarafından yapılmıştır.",
+                "modules": [
+                    "."
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                "main_code": "NB's Community By RoboTMotion\r\n",
+                "komutlar_code": "https://discord.new/vN8hqCMP2g7p",
+                "kod_rank": "sablon",
+                "k_adi": "NafiBey",
+                "date": "11/30/2021"
+            },
+            "Şablon 5 - Gelişmiş Botlist Sunucu Şablonu": {
+                "isim": "Şablon 5 - Gelişmiş Botlist Sunucu Şablonu",
+                "id": "gOiEAVvq54",
+                "desc": "Bu şablon RoboTMotion Development tarafından yapılmıştır.",
+                "modules": [
+                    "."
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                "main_code": "NB's Community By RoboTMotion\r\n",
+                "komutlar_code": "https://discord.new/XYtyF3prhvMT",
+                "kod_rank": "sablon",
+                "k_adi": "NafiBey",
+                "date": "11/30/2021"
+            },
+            "Şablon 6 - Satış Sunucusu Şablonu": {
+                "isim": "Şablon 6 - Satış Sunucusu Şablonu",
+                "id": "uAJ8z5QS4T",
+                "desc": "Bu şablon RoboTMotion Development tarafından yapılmıştır.",
+                "modules": [
+                    "."
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                "main_code": "NB's Community By RoboTMotion\r\n",
+                "komutlar_code": "https://discord.com/template/NYHMhb22Ddpu",
+                "kod_rank": "sablon",
+                "k_adi": "NafiBey",
+                "date": "11/30/2021"
+            }
+        }
+    }
+]

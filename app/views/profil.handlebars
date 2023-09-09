@@ -1,0 +1,68 @@
+<title>RoboTMotion Development | {{member.user.username}}</title> <br><br> <div class="container">
+    <div>
+
+      <center>
+      <a href="https://discordapp.com/users/{{member.user.id}}" class="twPc-avatarLink">
+        <img alt="Avatar" src="{{avatarURL}}" class="twPc-avatarImg">
+      </a>
+      <div class="twPc-divUser">
+        <div class="twPc-divName">
+          {{member.user.username}}
+        </div>
+
+        
+        <div class="twPc-divStats">
+        <ul class="twPc-Arrange">
+          <a href="/jsV11" style="text-decoration:none" class="index-button1"><i class="fas fa-code"></i> Js V11 Kodları</a>
+          {{#if perms.yetkili}}
+          <a href="/jsV12" style="text-decoration:none" class="index-button1"><i class="fas fa-code"></i> Js V12 Kodları</a>
+          {{#if perms.yetkili}}
+          <a href="/jsV13" style="text-decoration:none" class="index-button1"><i class="fas fa-code"></i> Js V13 Kodları</a>
+          {{#if perms.yetkili}}
+          <a href="/jsV14" style="text-decoration:none" class="index-button1"><i class="fas fa-code"></i> Js V14 Kodları</a>
+          {{#if perms.yetkili}}
+       <a href="/androidstudio"  style="text-decoration:none" class="index-button2"><i class="fas fa-code"></i> Android Studio Kodları</a>
+       <a href="/arduino" style="text-decoration:none" class="index-button3"><i class="fas fa-code"></i> Arduino Kodları</a>
+       <a href="/cnc" style="text-decoration:none" class="index-button4"><i class="fas fa-code"></i> Sunucu Şablonları</a>
+          {{else}}
+            {{#if perms.destekçi}}
+            <a href="/androidstudio"  style="text-decoration:none" class="index-button2"><i class="fas fa-code"></i> Android Studio Kodları</a>
+            <a href="/arduino" style="text-decoration:none" class="index-button3"><i class="fas fa-code"></i> Arduino Kodları</a>
+            <a href="/cnc" style="text-decoration:none" class="index-button4"><i class="fas fa-code"></i> Sunucu Şablonları</a>
+            {{else}}
+              {{#if perms.androidstudio}}
+            <a href="/androidstudio"  style="text-decoration:none" class="index-button2"><i class="fas fa-code"></i> Android Studio Kodları</a>
+              {{/if}}
+              {{#if perms.arduino}}
+            <a href="/arduino" style="text-decoration:none" class="index-button3"><i class="fas fa-code"></i> Arduino Kodları</a>
+              {{/if}}
+              {{#if perms.sablon}}
+           <a href="/sablon" style="text-decoration:none" class="index-button4"><i class="fas fa-code"></i> Sunucu Şablonları</a>
+              {{/if}}
+            {{/if}}
+          {{/if}}  
+        </ul>
+      </div>
+        
+<hr>
+                <span>
+
+
+          {{#if perms.yetkili}}
+            <span>Kod Paylaşım Yetkilisi</span>
+          {{else}}
+            {{#if perms.destekçi}}
+              <span>RoboTMotion Development Kod Destekçisi</span>
+            {{else}}
+              <span>Kullanıcı</span>
+            {{/if}}
+          {{/if}}
+        </span>
+    </div>
+        
+        Paylaştığı Kodlar <font color="#222021">&</font> Yardım Ettiği Kodlar ( <font color="#222021">{{#if stats}} {{stats.paylasilan}} {{/if}} </font> )
+
+  </div>
+      </center>
+</div>
+

@@ -1,0 +1,57 @@
+[
+    {
+        "hazir": {},
+        "kodlar": {
+            "": {
+                "": {
+                    "isim": ".",
+                    "id": "w0M2wqIDff",
+                    "desc": ".",
+                    "modules": [
+                        "."
+                    ],
+                    "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                    "main_code": ".",
+                    "komutlar_code": ".",
+                    "kod_rank": "arduino",
+                    "k_adi": "NafiBey",
+                    "date": "11/19/2021"
+                }
+            },
+            "Arduino İle Led Yakma Komutu": {
+                "isim": "Arduino İle Led Yakma Komutu",
+                "id": "7t6Lv3enkp",
+                "desc": "Arduino - Proteus Kurulumu / Arduino ile tek led yakma.",
+                "modules": [
+                    "Arduinonun kurulumu ",
+                    " proteus 8 kurulumunu yapmanız gereklidir."
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                "main_code": "https://www.arduino.cc/en/software sitesinden arduinoyu indirip kurduktan sonra kodlamaya başlayabilirsiniz.\r\n\r\nEk olarak proteus sanal devre uygulamasını indirmek için https://drive.google.com/drive/folders/1FtjoW-tmg0Tk7TW0eIZdMfWywXSdE_x4\r\n\r\n\r\nhttps://youtu.be/yIanhHSaqPc bu videoda kodun yazılması sonucunda nasıl çalışacağı gösteriliyor.\r\n\r\n",
+                "komutlar_code": "void setup() {\r\n\r\npinMode(0 , OUTPUT); // Arduinonun 0.pinini çıkış olarak ayarladık.\r\n\r\n}\r\n\r\nvoid loop() {\r\n\r\ndigitalWrite(0,HIGH); // Ledimize güç vermesini ayarladık.\r\ndelay(1000); // Ledimizi 1 saniye yakmasını sonra 1 saniye bekleyip söndürmesini ayarladık.\r\n\r\n}",
+                "kod_rank": "arduino",
+                "k_adi": "NafiBey",
+                "date": "11/19/2021"
+            },
+            "Uyg": {
+                " 1 | Led Yakma Proje Kodu": {
+                    "isim": "Uyg. 1 | Led Yakma Proje Kodu",
+                    "id": "iqoxLNMCM1",
+                    "desc": "Arduino ile led yakma projesidir.",
+                    "modules": [
+                        "Arduino IDE Programı ",
+                        " Direnç 220Ω ",
+                        " Arduino Kart ",
+                        " Led"
+                    ],
+                    "icon": "https://cdn.discordapp.com/avatars/466666674016485386/be7ff191536d1837d457f928b7769eb0.png",
+                    "main_code": "Projenin Devre Şeması : https://media.discordapp.net/attachments/850246575833743400/1058073636667412590/image.png?width=1200&height=539\r\n\r\n・Arduino Uno (Klon) Satın Alma Linki : https://www.robotistan.com/arduino-uno-r3-klon-usb-kablo-hediyeli-usb-chip-ch340\r\n\r\n・Led (Kırmızı - 5mm) Satın Alma Linki : https://www.robotistan.com/5mm-kirmizi-led-paketi-10-adet\r\n\r\n・Led (Yeşil - 5mm) Satın Alma Linki : https://www.robotistan.com/5mm-yesil-led-paketi-10-adet\r\n\r\n・Led (Sarı - 5mm) Satın Alma Linki : https://www.robotistan.com/5mm-sari-led-paketi-10-adet\r\n\r\n・Direnç (220Ω) Satın Alma Linki : https://www.robotistan.com/14w-220",
+                    "komutlar_code": "void setup () {\r\n\r\npinMode(2,OUTPUT); // Arduinonun 2. pinini çıkış olarak tanımladık.\r\n}\r\n\r\nvoid loop () {\r\n\r\ndigitalWrite(2,HIGH); // Arduinonun 2. pinine enerji verildi. Led yandı.\r\ndelay(1000); // 1 saniye bekliyoruz.\r\ndigitalWrite(2,LOW); // Arduinonun 2. pinine verilen enerji kesildi. Led söndü.\r\n} \r\n",
+                    "kod_rank": "arduino",
+                    "k_adi": "NafiBey",
+                    "date": "12/29/2022"
+                }
+            }
+        }
+    }
+]

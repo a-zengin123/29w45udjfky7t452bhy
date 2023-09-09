@@ -1,0 +1,52 @@
+[
+    {
+        "kodlar": {
+            "": {
+                "": {
+                    "isim": ".",
+                    "id": "rF5sMhYq3H",
+                    "desc": ".",
+                    "modules": [
+                        "."
+                    ],
+                    "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                    "main_code": ".",
+                    "komutlar_code": ".",
+                    "kod_rank": "js",
+                    "k_adi": "NafiBey",
+                    "date": "11/19/2021"
+                }
+            },
+            "v12 İzinli Say Komutu": {
+                "isim": "v12 İzinli Say Komutu",
+                "id": "YdzZIdrttp",
+                "desc": "Etiketlenen yetkiliyi izinli olarak kaydeder.",
+                "modules": [
+                    "croxydb ",
+                    " discord.js "
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                "main_code": "Main Dosyası Yoktur.",
+                "komutlar_code": "const Discord = require('discord.js');\r\n\r\nmodule.exports.run = async (bot, message, args) => { \r\n\r\n    if (!message.member.hasPermission(\"MANAGE_ROLES\")) return message.channel.send(new Discord.MessageEmbed().setDescription('Bu komutu kullanmak için **Rolleri Yönet** yetkisine sahip olmalısınız.').setColor(10038562));\r\n    let kullanıcı = message.guild.member(message.mentions.users.first()) || message.guild.members.cache.get(args[0]);\r\n    if (!kullanıcı) return message.channel.send(new Discord.MessageEmbed().setDescription(`Lütfen bir kullanıcı ismi giriniz.\\nÖrnek: bi.izinlisay @izinlisayılacakyetkili @izinliRolü`).setColor(10038562));\r\n    let rol = message.mentions.roles.first()\r\n\r\n    if (!rol) return message.channel.send(new Discord.MessageEmbed().setDescription(`Lütfen bir rol ismi giriniz.\\nÖrnek: bi.izinlisay @izinlisayılacakyetkili @izinliRolü`).setColor(10038562));\r\n    let izinliRol = message.mentions.roles.first()\r\n    if (!izinliRol) return message.channel.send(new Discord.MessageEmbed().setDescription(`Rol bulunamadı.\\nÖrnek: bi.izinlisay @izinlisayılacakyetkili @izinliRolü`).setColor(10038562));\r\n  \r\n    if (kullanıcı.roles.cache.has(izinliRol.id)) return message.channel.send(new Discord.MessageEmbed().setDescription('Bu kullanıcı zaten sistemde izinli olarak kayıtlı.').setColor(10038562));\r\n    await (kullanıcı.roles.add(izinliRol.id))\r\n    message.channel.send(new Discord.MessageEmbed().setDescription(`**${kullanıcı}** isimli yetkili \\`\\`${rol.name}\\`\\` olarak sisteme kaydedildi.`).setColor('RANDOM'));\r\n  \r\n\r\n};\r\n\r\nmodule. exports.conf = {\r\n  aliases: ['izin-ver']\r\n};\r\n\r\nmodule.exports.help = {\r\n  name: 'izinli-say'\r\n};",
+                "kod_rank": "js",
+                "k_adi": "NafiBey",
+                "date": "11/20/2021"
+            },
+            "V12 Bota Sunucu Kuralları Yazdırma": {
+                "isim": "V12 Bota Sunucu Kuralları Yazdırma",
+                "id": "0y8WpZfbTp",
+                "desc": "Bota kuralları yazdırır.",
+                "modules": [
+                    "discord.js v12 ",
+                    " quick.db"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/be7ff191536d1837d457f928b7769eb0.png",
+                "main_code": "Main dosyası yoktur.",
+                "komutlar_code": "const Discord = require('discord.js');\r\n\r\nexports.run = async(client, message) => {\r\n\r\n    const kurallar = new Discord.RichEmbed()\r\n    \r\n      .setColor('RANDOM')\r\n      .addField(`Sunucu Kuralları`, [`\r\n      \r\n**:scales: Sunucuya hoşgeldin !**\r\n\r\n> *Sunucumuzun herkes için güzel bir ortam olmasını sağlamak istiyoruz ve bunun başında belirli kuralların koyulması gerektiğini biliyoruz. Burada yazmayan kurallar harici, sunucu düzenini bozan davranışlar da yasaktır.*\r\n\r\n**Discord Topluluk Kuralları'na uyun.**\r\n\r\n>   *• Topluluk kurallarına uymamanız sonucu kalıcı olarak uzaklaştırılacaksınız.\r\n>   • Daha fazla bilgi almak istiyorsanız https://discord.com/terms adresine bakınız.\r\n>   • Discord ile ilgili sorununuz varsa lütfen desteğe ulaşın: https://dis.gd/contact*\r\n\r\n**Mesajlarınızın içeriğine dikkat edin.**\r\n\r\n>   *• Cinsel içerikler paylaşmayın veya göndermelerini yapmayın.\r\n>   • Ölüm, yaralama ve zarar verici konuları bulundurmayın.\r\n>   • Yasa dışı, çalma veya hackleme gibi konuları bulundurmayın.\r\n>   • Dil, din, ırk ayrımı yapmayın ve herkese saygıyla yaklaşın.\r\n>   • Herhangi birisini ifşalamayın, kötülemeyin veya aşağılamayın.\r\n>   • Spam, flood, küfür, gereksiz spoiler veya aşırı caps kullanmayın.\r\n>   • Rolleri veya üyeleri gereksiz/spam amaçlı etiketlemeyin.*\r\n\r\n**Davranışlarınızı değerlendirin.**\r\n\r\n>   *• Rahatsız olacağınız davranışları yansıtmayın ve buna dikkat edin.\r\n>   • Devamlı olarak yanlış bilgi paylaşıp insanları kandırmayı amaçlamayın.\r\n>   • Sürekli birisine veya toplu arkadaşlık isteği yollamayın.\r\n>   • Moderatörlerin uyarılarına ve dediklerine dikkat ediniz.\r\n>   • Minimod'luk yani yetkili olmadan yetkili gibi uyarı vermek veya karar koymak yasaktır.*\r\n\r\n*Bir kuralın ihlal edildiğini görürseniz bir yetkiliye ulaşınız. (Hiçbir yetkili açık değilse rolü etiketleyebilirsiniz)*\r\n\r\n      `])\r\n\r\n       message.delete();\r\n\r\n    return message.channel.send(kurallar).then(sunucuKural => sunucuKural.react(\"?\"));\r\n\r\n}\r\n\r\nexports.conf = {\r\n    enabled: true,\r\n    guildOnly: false,\r\n    aliases: ['kurallar'],\r\n    permLevel: 0\r\n}\r\n\r\nexports.help = {\r\n    name : 'kural-kur',\r\n    description: 'Hazır kuralları kanalınıza atar.',\r\n    usage: 'prefixiniz kural-kur' // örneğin !kural-kur , .kural-kur (prefix değişimi size bağlıdır.)\r\n}",
+                "kod_rank": "jsV12",
+                "k_adi": "NafiBey",
+                "date": "12/29/2022"
+            }
+        }
+    }
+]

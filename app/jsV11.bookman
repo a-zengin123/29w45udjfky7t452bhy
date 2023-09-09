@@ -1,0 +1,37 @@
+[
+    {
+        "kodlar": {
+            "": {
+                "": {
+                    "isim": ".",
+                    "id": "HQj0tfX2er",
+                    "desc": ".",
+                    "modules": [
+                        "."
+                    ],
+                    "icon": "https://cdn.discordapp.com/avatars/466666674016485386/a_4c8460e76c053b3cac362fd693f64711.png",
+                    "main_code": ".",
+                    "komutlar_code": ".",
+                    "kod_rank": "jsV11",
+                    "k_adi": "NafiBey",
+                    "date": "11/19/2021"
+                }
+            },
+            "V11 Canlı Destek Sistemi": {
+                "isim": "V11 Canlı Destek Sistemi",
+                "id": "nnflxsIakG",
+                "desc": "V11 canlı destek sistemidir.",
+                "modules": [
+                    "discord.js v11 ",
+                    " quick.db"
+                ],
+                "icon": "https://cdn.discordapp.com/avatars/466666674016485386/be7ff191536d1837d457f928b7769eb0.png",
+                "main_code": "Main Dosyası Yoktur.",
+                "komutlar_code": "const Discord = require('discord.js');\r\n\r\nexports.run = async (client, message, params) => {\r\n    if(message.channel.type == \"dm\")  return;\r\n  if(message.channel.type !== \"text\") return;\r\n  var canlıkanal = client.channels.find('id', 'kanalid')\r\n    const canlıdestek = await client.channels.get(message.channel.id).createInvite()\r\n  message.delete();\r\n  const embed = new Discord.RichEmbed()\r\n  .setTitle(\"»  Bot | Canlı Destek Sistemi\")\r\n  .setDescription(\"**Canlı destek talebin alındı. Seninle destek ekibi ilgilenecek. Lütfen bekle! Teşekkürler.**\")\r\n  .setFooter(\"Geri dönüş sağlanmazsa destek sunucusuna katılın.\")\r\n message.channel.send(embed)\r\n      const destekDavet = new Discord.RichEmbed()\r\n  .setAuthor(\"» Canlı Destek | Talep\")\r\n  .addField('**» Kullanıcı Adı: **', message.author.username + '#' + message.author.discriminator)\r\n  .addField('**» Sunucu Adı: **', message.guild.name)\r\n  .setDescription(canlıdestek.url)\r\n      canlıkanal.send(destekDavet)\r\n};\r\n  \r\n  exports.conf = {\r\n  enabled: true,\r\n  guildOnly: false,\r\n  aliases: ['canlıdestek'],\r\n  permLevel: 0\r\n};\r\n\r\nexports.help = {\r\n  name: 'canlı-destek',\r\n  description: 'Canlı Destek Tablebi Oluşturur.',\r\n  usage: 'prefixiniz canlı-destek' // örneğin !canlı-destek , .canlı-destek (prefix değişimi size bağlıdır.)\r\n};",
+                "kod_rank": "jsV11",
+                "k_adi": "NafiBey",
+                "date": "12/29/2022"
+            }
+        }
+    }
+]
